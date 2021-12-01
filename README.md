@@ -2,61 +2,6 @@
 
 # Assignment 4: Environment Mapping and Shadow Mapping
 
-Handout date: 11/10/2021
-
-Submission deadline: 11/30/2021, 11:59PM EST
-
-Demo date: TBA, via Zoom appointments
-
-This assignment accounts for 30% of your final grade. 
-
-## Goals
-
-This homework will improve the 3D scene editor from the previous assignment, adding shadow and reflection effects.
-
-## GLM
-
-In all exercises you will need to do operations with vectors and matrices. To simplify the code, you will use GLM:
-
-* https://glm.g-truc.net/0.9.9/index.html
-
-Have a look at the Getting Started page of GLM as well as the Code Samples page to acquaintain yourselves with the basic vector and matrix operations supported:
-
-* https://github.com/g-truc/glm/blob/master/manual.md#section1
-
-* https://github.com/g-truc/glm/blob/master/manual.md#section8
-
-## OpenGL
-
-In all exercises you will use OpenGL 3.3 with GLSL version 150 (You can use a newer version if you want).
-
-## Submission
-
-Try to maintain the same directory organization as the starter code, so you don't need to change the CMakeLists.txt file.
-
-* Follow this to accept assignment and create repository: 
-
-```bash
-https://classroom.github.com/a/BAGWJR7K
-```
-
-* You MUST use the source code provided for Assignment 2 and the code you implemented for Assignment 3 following this assignment instructions. Don't forget to initialize and update the submodules: 
-
-```bash
-git submodule update --init --recursive https://github.com/nyu-cs-gy-6533-fall-2020/base 
-```
-
-* Modify the provided code following the assignment instructions.
-
-* Add a report in markdown format that contains what you did with a screenshot for each task.
-
-* Commit and push the code into the repository before the deadline.
-
-## Mandatory Tasks
-
-For each task below, add at least one image in the readme demonstrating the results. The code that you used for all tasks should be provided.
-
-
 ## Shadow Mapping
 
 Starting with the interactive application you have implemented in the previous assignment, add shadows to the scene to increase its realism. You will still need to be able to add, select and move, and delete 3D meshes to the scene (they can be added in randomly at any position in the scene; otherwise, the center of the scene).
@@ -129,8 +74,4 @@ This task is optional and worth 1% of the final grade.
 The calculation of the reflection vector can be easily changed to the calculation of the refraction vector. 
 Add to your system the refractive material property for the objects. Once it is implemented, you will be able to render transparent objects.
 
-## Dynamically Generated Cube Map Textures
 
-This task is optional and worth 3% of the final grade.
-
-As discussed in class, the cube map textures can be generated on the fly. This technique allows us to render objects with time-dependent reflections, i.e., all objects in the scene will be displayed in the cube map textures. As a result, the reflection color values on a reflective object's surface will change with time.  This technique adds a performance hit in the final total rendering time. Why is that?
