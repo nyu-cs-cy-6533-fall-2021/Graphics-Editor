@@ -20,14 +20,9 @@ Note that you can have multiple copies of the same object in the scene, and each
 
 The shadow's color must interchangeably change colors from back to red and vice-versa when the user hits the key 's' (see figures below).  In order to easily visualize the shadows, you must render a plane below the objects in the scene (see figure below).
 
-| ![shadow-black](shadow-black.png) |
-|:--:|
-| <b>The picture shows the mesh objects and plane rendered using per-fragment shading and the shadow mapping algorithm.</b> |
+![create an triangle](/blob/.gif)
 
-
-| ![shadow-red](shadow-red.png) |
-|:--:|
-| <b>The picture shows the mesh objects and plane rendered using per-fragment shading and the shadow mapping algorithm. In this version, the shadows are displayed using the red color.</b> |
+![create an triangle](/blob/.gif)
 
 Don't forget to consult the class textbook and the optional and recommended text. The OpenGL Programming Guide has a full section on shadow mapping. It is explained in detail how to set up the depth buffer for using a shadow mapping algorithm and the matrices transformations needed.
 
