@@ -17,12 +17,11 @@ New objects can be added to the scene in three ways:
 * The key '3' will import a new copy the mesh 'bunny.off', scale it to fit into a unit cube and center it on the origin
 
 Note that you can have multiple copies of the same object in the scene, and each copy can have its position, scale, and rotation. All objects (besides the reflective ones) must be shaded using the Phong Shading (per-fragment shading) and Phong's lighting model.
+![create an triangle](/blob/transforms.gif)
 
 The shadow's color must interchangeably change colors from back to red and vice-versa when the user hits the key 's' (see figures below).  In order to easily visualize the shadows, you must render a plane below the objects in the scene (see figure below).
 
-![create an triangle](/blob/.gif)
-
-![create an triangle](/blob/.gif)
+![create an triangle](/blob/red.gif)
 
 Don't forget to consult the class textbook and the optional and recommended text. The OpenGL Programming Guide has a full section on shadow mapping. It is explained in detail how to set up the depth buffer for using a shadow mapping algorithm and the matrices transformations needed.
 
@@ -43,21 +42,16 @@ Each object also has a rendering setting associated with it, which can be one of
 
 * Mirror (chrome) appearance: the object is rendered using the environment mapping technique discussed in class. In this item, you don't need to update the cube map texture at each iteration.
 
+![create an triangle](/blob/mirror.gif)
 
-| ![env-mapping](env-mapping.png) |
-|:--:|
-| <b>Skybox (cube with textures) and reflective objects rendered using the environment mapping technique.</b> |
-
-
-| ![env-mapping2](env-mapping2.png) |
-|:--:|
-| <b>Multiple objects can be rendered as reflective ones.</b> |
 
 ## Camera Control
 
 Add the possibility to translate the position of the camera (similarly to the previous assignment). The camera should always point to the origin. It should be possible to move it around, but the camera should always face the origin.
 
 Implement only the perspective camera. The cameras should take into account the size of the window, properly adapting the aspect ratio to not distort the image whenever the window is resized. All functionalities should work after resizing the window, including object selection and editing of the scene.
+
+![create an triangle](/blob/camera.gif)
 
 ## Optional Tasks
 
@@ -68,5 +62,7 @@ These tasks are optional.
 This task is optional and worth 1% of the final grade.
 The calculation of the reflection vector can be easily changed to the calculation of the refraction vector. 
 Add to your system the refractive material property for the objects. Once it is implemented, you will be able to render transparent objects.
+
+![create an triangle](/blob/transparent.gif)
 
 
