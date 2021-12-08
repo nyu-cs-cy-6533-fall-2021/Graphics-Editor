@@ -594,7 +594,7 @@ void rotateCounterClockwise(int i, int obj_id) {
 void calculateAverageNormal(std::vector<glm::vec3> V, std::vector<glm::vec3> N, int start, int end, std::vector<glm::vec3> &N_new){
 	vector<int> already_calculated(V.size(), 0);
 	vector<int> count(V.size(),1);
-	N_new = N;
+	//N_new = N;
 
 	for (int i = start; i <= end; i++) {
 		if (already_calculated[i] == 0) {
