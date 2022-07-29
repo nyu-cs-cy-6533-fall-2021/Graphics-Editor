@@ -30,7 +30,7 @@ Each object also has a rendering setting associated with it, which can be one of
 
 ![create an triangle](/blob/move.gif)
 
-![create an triangle](/blob/3.gif)
+![create an triangle](/blob/lalala.gif)
 
 ![create an triangle](/blob/mode.gif)
    
